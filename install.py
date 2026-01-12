@@ -53,7 +53,7 @@ def vnc():
 
       print("[+] Done")
 
-      text = "pkill Xvnc\nvncserver :1"
+      text = "pkill Xvnc\vncserver :1"
       with open("start-desktop", "w") as file:
           file.write(text)
 
@@ -65,7 +65,7 @@ def vnc():
       "mv start-desktop $PREFIX/bin && "
       "start-desktop"
       )
-
+      SYS("clear && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
 
 
