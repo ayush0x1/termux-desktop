@@ -16,7 +16,7 @@
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/adi1090x/termux-desktop/master/previews/desk_1.png" width="90%" alt="Termux Desktop Screenshot">
+<img src="https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.03.jpeg" width="90%" alt="Termux Desktop Screenshot">
 
 </p>
 
@@ -30,7 +30,7 @@
 ### One-Line Installation
 
 ```bash
-apt update && apt upgrade && apt install git jp2a python-pip wget -y && git clone https://github.com/ayush0x1/termux-desktop && cd termux-desktop && python3 install.py
+apt update && apt upgrade -y && apt install git jp2a python-pip wget -y && git clone https://github.com/ayush0x1/termux-desktop && cd termux-desktop && python3 install.py
 ```
 
 ### Contributing
@@ -50,10 +50,9 @@ If this project helps you, your support means a lot to me.
 </a>
 
 
-Let's take a look at following installed programs you'll get here - 
-
-|File Manager|Text Editor/IDE|
-|--|--|
-|![img]()|
-
+Image
+| File Manager | Text Editor / IDE |
+|-------------|------------------|
+| ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.04.jpeg) | ![File Manager](https://archive.org/download/whats-app-image-2026-01-12-at-16.51.04-1/WhatsApp%20Image%202026-01-12%20at%2016.51.04%281%29.jpeg) | 
+ ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.52.03.jpeg) | ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.05.jpeg) |
 
