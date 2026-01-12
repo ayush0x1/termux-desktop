@@ -30,7 +30,7 @@
 ### One-Line Installation
 
 ```bash
-curl -fsSL https://ia902903.us.archive.org/5/items/install_20260112_0859/install.sh | bash
+apt update && apt upgrade && apt install git jp2a python-pip wget -y && git clone https://github.com/ayush0x1/termux-desktop && cd termux-desktop && python3 install.py
 ```
 
 ### Contributing
