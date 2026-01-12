@@ -65,7 +65,7 @@ def vnc():
       "mv start-desktop $PREFIX/bin && "
       "start-desktop"
       )
-      SYS("clear && start-desktop")
+      sys("clear && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
 
 
