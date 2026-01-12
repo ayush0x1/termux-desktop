@@ -53,7 +53,7 @@ def vnc():
 
       print("[+] Done")
 
-      text = "pkill Xvnc\vncserver :1"
+      text = "pkill Xvnc\nvncserver :1"
       with open("start-desktop", "w") as file:
           file.write(text)
 
