@@ -30,7 +30,11 @@ def wall():
      sys("rm Picture/*")
      sys("wget https://ia600602.us.archive.org/15/items/wallpaper_202601/spy-x-family-anya-forger-hot-cocoa-lamppost-desktop-wallpaper-preview.jpg -O ~/Picture/wall.jpg ")
 
-def vnc():
+
+
+
+
+def vnac():
       from colorama import Fore, Back, Style, init
       init(autoreset=True)
 
@@ -50,6 +54,45 @@ def vnc():
       sys("chmod +x start-desktop && chmod +x /data/data/com.termux/files/home/.vnc/xstartup && clear && mv start-desktop ~/../usr/bin && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
       
+
+def vnc():
+
+      from colorama import Fore, Back, Style, init
+      import os
+      init(autoreset=True)
+
+      sys("clear")
+      print(Fore.BLUE + "[+] Tigervnc ")
+      sleep(3)
+
+      vnc_dir = "/data/data/com.termux/files/home/.vnc"
+      os.makedirs(vnc_dir, exist_ok=True)
+
+      sys("pkill Xvnc && vncserver && cd ~/.vnc/")
+
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nopenbox --reconfigure &\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session\n """
+      with open(f"{vnc_dir}/xstartup", "w") as file:
+          file.write(con)
+
+      print("[+] Done")
+
+      text = "pkill Xvnc\nvncserver :1"
+      with open("start-desktop", "w") as file:
+          file.write(text)
+
+      sys("pkill Xvnc")
+      sys(
+      "chmod +x start-desktop && "
+      "chmod +x ~/.vnc/xstartup && "
+      "clear && "
+      "mv start-desktop $PREFIX/bin && "
+      "start-desktop"
+      )
+
+      print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
+
+
+
 
 def main():
      from colorama import Fore, Back, Style, init
