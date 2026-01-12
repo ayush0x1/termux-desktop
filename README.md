@@ -13,7 +13,6 @@
 
 ---
 
-
 <p align="center">
 
 <img src="https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.03.jpeg" width="90%" alt="Termux Desktop Screenshot">
@@ -33,6 +32,10 @@
 apt update && apt upgrade -y && apt install git jp2a python-pip wget -y && git clone https://github.com/ayush0x1/termux-desktop && cd termux-desktop && python3 install.py
 ```
 
+Lightweight **Termux desktop environment on Android** running a clean **Linux GUI in Termux**
+using **Openbox** and a minimal panel. Optimized for low RAM usage while maintaining an
+aesthetic and distraction-free desktop experience <img src="https://i.gifer.com/YAg6.gif" height="30" /> .
+
 ### Contributing
 
 Hi, I’m **ayush**<img src="https://media.tenor.com/gZ2OPWCBJrwAAAAj/cinnamoroll-cinnamoroll-sanrio-character.gif" height="30" /> , a 14-year-old learner building this project as part of my learning journey.
@@ -40,9 +43,14 @@ Hi, I’m **ayush**<img src="https://media.tenor.com/gZ2OPWCBJrwAAAAj/cinnamorol
 Contributions, feedback, and guidance are welcome.  
 Feel free to open issues or submit pull requests.
 
-### Support
+## Support
 
-If this project helps you, your support means a lot to me.
+If this project was useful to you, consider giving it a star <img src="https://opengameart.org/sites/default/files/Magical%20rainbow%20star%20128px%20gif.gif" height="30" /> .
+It helps the project grow and reach more users.
+
+If you’d like to support further, you can also buy me a coffee.
+
+Your support<img src="https://cdn.pixabay.com/animation/2025/08/07/01/12/01-12-16-789_512.gif" height="30" /> encourages me to keep learning and improving this project.
 
 
 <a href="https://www.buymeacoffee.com/ayush0x1" target="_blank">
@@ -51,7 +59,7 @@ If this project helps you, your support means a lot to me.
 
 
 Image
-| File Manager | Text Editor / IDE |
+| Image | Text Editor / IDE |
 |-------------|------------------|
 | ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.04.jpeg) | ![File Manager](https://archive.org/download/whats-app-image-2026-01-12-at-16.51.04-1/WhatsApp%20Image%202026-01-12%20at%2016.51.04%281%29.jpeg) | 
  ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.52.03.jpeg) | ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.05.jpeg) |
