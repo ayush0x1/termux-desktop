@@ -54,7 +54,7 @@ def vnc():
 def main():
      from colorama import Fore, Back, Style, init
 
-     sys("jp2a https://assets.stickpng.com/images/613098fd48f1e30004910189.png  --color --color ")
+     sys("jp2a https://assets.stickpng.com/images/613098fd48f1e30004910189.png  --color ")
      print(Style.BRIGHT + Fore.BLUE + "Created by: ayush \n")
      sleep(2)
      sys(requre.req)
