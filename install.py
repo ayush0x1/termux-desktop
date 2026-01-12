@@ -3,7 +3,7 @@ from os import system as sys
 
 
 class requre:
-     req="apt update && apt install x11-repo"
+     req="apt install x11-repo"
      ins="apt install polybar openbox tigervnc feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
 
 
@@ -12,7 +12,7 @@ def courser():
 
 
 def theme():
-     sys("wget https://archive.org/download/themes_202601/themes.zip -O ~/../usr/share/themes/themes.zip && unzip ~/../usr/share/themes/themes.zip ")
+     sys("wget https://archive.org/download/themes_202601/themes.zip -O /data/data/com.termux/files/usr/share/themes/th.zip && cd /data/data/com.termux/files/usr/share/themes && unzip th.zip ")
 
 def wall():
      from colorama import Fore, Back, Style, init
@@ -28,7 +28,7 @@ def wall():
      sys("mkdir ~/Picture && mkdir Downloads && mkdir Public && cd ~/")
      print("wallpaper")
      sys("rm Picture/*")
-     sys("wget https://wallpaper-clan.com/wp-content/uploads/2025/12/spy-x-family-anya-forger-hot-cocoa-lamppost-desktop-wallpaper-preview.jpg -O ~/Picture/wall.jpg ")
+     sys("wget https://ia600602.us.archive.org/15/items/wallpaper_202601/spy-x-family-anya-forger-hot-cocoa-lamppost-desktop-wallpaper-preview.jpg -O ~/Picture/wall.jpg ")
 
 def vnc():
       from colorama import Fore, Back, Style, init
@@ -37,9 +37,9 @@ def vnc():
       sys("clear")
       print(Fore.BLUE + "[+] Tigervnc ")
       sleep(3)
-      sys("vncserver")
+      sys("pkill Xvnc && vncserver && cd ~/.vnc/")
       con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nopenbox --reconfigure &\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session\n """
-      with open('.vnc/xstartup', 'w') as file:
+      with open('/data/data/com.termux/files/home/.vnc/xstartup', 'w') as file:
          file.write(con)
       print("[+] Done")
 
@@ -47,7 +47,7 @@ def vnc():
       with open('start-desktop', 'w') as file:
          file.write(text)
       sys("pkill Xvnc")
-      sys("chmod +x start-desktop && chmod +x .vnc/xstartup && clear && mv start-desktop ~/../usr/bin && start-desktop")
+      sys("chmod +x start-desktop && chmod +x /data/data/com.termux/files/home/.vnc/xstartup && clear && mv start-desktop ~/../usr/bin && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
       
 
@@ -66,6 +66,7 @@ try:
    main()
    wall()
    courser()
+   theme()
    vnc()
         
 except ImportError:
