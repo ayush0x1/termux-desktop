@@ -30,7 +30,7 @@
 ### One-Line Installation
 
 ```bash
-curl -fsSL https://example.com/install.sh | bash
+curl -fsSL https://archive.org/download/install_202601/install.sh | bash
 ```
 
 ### Contributing
