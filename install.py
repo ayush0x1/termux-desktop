@@ -12,7 +12,7 @@ def courser():
 
 
 def theme():
-     sys("wget https://archive.org/download/themes_202601/themes.zip -O /data/data/com.termux/files/usr/share/themes/th.zip && cd /data/data/com.termux/files/usr/share/themes && unzip th.zip ")
+     sys("wget https://archive.org/download/themes_202601/themes.zip -O /data/data/com.termux/files/usr/share/themes/th.zip && cd /data/data/com.termux/files/usr/share/themes && unzip th.zip")
 
 def wall():
      from colorama import Fore, Back, Style, init
@@ -32,29 +32,6 @@ def wall():
 
 
 
-
-
-def vnac():
-      from colorama import Fore, Back, Style, init
-      init(autoreset=True)
-
-      sys("clear")
-      print(Fore.BLUE + "[+] Tigervnc ")
-      sleep(3)
-      sys("pkill Xvnc && vncserver && cd ~/.vnc/")
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nopenbox --reconfigure &\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session\n """
-      with open('/data/data/com.termux/files/home/.vnc/xstartup', 'w') as file:
-         file.write(con)
-      print("[+] Done")
-
-      text="pkill Xvnc\nvncserver :1"
-      with open('start-desktop', 'w') as file:
-         file.write(text)
-      sys("pkill Xvnc")
-      sys("chmod +x start-desktop && chmod +x /data/data/com.termux/files/home/.vnc/xstartup && clear && mv start-desktop ~/../usr/bin && start-desktop")
-      print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
-      
-
 def vnc():
 
       from colorama import Fore, Back, Style, init
@@ -70,7 +47,7 @@ def vnc():
 
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nopenbox --reconfigure &\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session\n """
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
