@@ -4,7 +4,7 @@ from os import system as sys
 
 class requre:
      req="apt install x11-repo"
-     ins="apt install polybar openbox tigervnc feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
+     ins="apt install polybar openbox tigervnc alacritty feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
 
 
 def courser():
