@@ -50,7 +50,7 @@ def vnc():
 
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill /data/data/com.termux/files/usr/share/app/wall/wall1.png &\npython /data/data/com.termux/files/usr/share/app/app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill /data/data/com.termux/files/usr/share/app/wall/wall1.png &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
