@@ -30,7 +30,7 @@ def wall():
 
 
 def app():
-     sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && unzip /data/data/com.termux/files/usr/share/app.zip")
+     sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
 
 
 
