@@ -15,7 +15,7 @@
 
 <p align="center">
 
-<img src="https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.03.jpeg" width="90%" alt="Termux Desktop Screenshot">
+<img src="https://archive.org/download/whats-app-image-2026-01-15-at-04.06.06-1/WhatsApp%20Image%202026-01-15%20at%2004.06.06%281%29.jpeg" width="90%" alt="Termux Desktop Screenshot">
 
 </p>
 
@@ -38,9 +38,9 @@ aesthetic and distraction-free desktop experience <img src="https://i.gifer.com/
 
 ### Contributing
 
-Hi, I’m **ayush**<img src="https://media.tenor.com/gZ2OPWCBJrwAAAAj/cinnamoroll-cinnamoroll-sanrio-character.gif" height="30" /> , a 14-year-old learner building this project as part of my learning journey.
+Hi, I’m **ayush**<img src="https://media.tenor.com/gZ2OPWCBJrwAAAAj/cinnamoroll-cinnamoroll-sanrio-character.gif" height="30" /> 
 
-Contributions, feedback, and guidance are welcome.  
+Contributions and feedback are welcome.  
 Feel free to open issues or submit pull requests.
 
 ## Support
@@ -48,9 +48,8 @@ Feel free to open issues or submit pull requests.
 If this project was useful to you, consider giving it a star <img src="https://opengameart.org/sites/default/files/Magical%20rainbow%20star%20128px%20gif.gif" height="30" /> .
 It helps the project grow and reach more users.
 
-If you’d like to support further, you can also buy me a coffee.
 
-Your support<img src="https://cdn.pixabay.com/animation/2025/08/07/01/12/01-12-16-789_512.gif" height="30" /> encourages me to keep learning and improving this project.
+please support it. Even a small coffee <img src="https://i.pinimg.com/originals/e9/26/16/e9261611196ebd98b2d76ab0627699a0.gif" height="30" />  helps keep this project alive and updated.
 
 
 <a href="https://www.buymeacoffee.com/ayush0x1" target="_blank">
@@ -58,9 +57,22 @@ Your support<img src="https://cdn.pixabay.com/animation/2025/08/07/01/12/01-12-1
 </a>
 
 
-Image
-| Image | Text Editor / IDE |
-|-------------|------------------|
-| ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.04.jpeg) | ![File Manager](https://archive.org/download/whats-app-image-2026-01-12-at-16.51.04-1/WhatsApp%20Image%202026-01-12%20at%2016.51.04%281%29.jpeg) | 
- ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.52.03.jpeg) | ![File Manager](https://ia601708.us.archive.org/14/items/whats-app-image-2026-01-12-at-16.51.03/WhatsApp%20Image%202026-01-12%20at%2016.51.05.jpeg) |
+| | | | |
+|---|---|---|---|
+| ![](images/img3.png) | ![](https://ia601404.us.archive.org/1/items/whats-app-image-2026-01-15-at-04.06.06-1/WhatsApp%20Image%202026-01-15%20at%2004.06.05%281%29.jpeg) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.06.06-1/WhatsApp%20Image%202026-01-15%20at%2004.06.05.jpeg) | ![](images/img3.png) |
+
+
+
+| ![](images/img3.png) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.43.29imgss/WhatsApp%20Image%202026-01-15%20at%2004.43.29.jpeg) | ![](images/img3.png) |
+
+
+| | | | |
+|---|---|---|---|
+| ![](images/img3.png) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.43.29imgss/WhatsApp%20Image%202026-01-15%20at%2004.43.30.jpeg) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.43.29imgss/WhatsApp%20Image%202026-01-15%20at%2004.43.29%281%29.jpeg) |
+
+
+
+| ![](images/img3.png) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.43.29imgss/WhatsApp%20Image%202026-01-15%20at%2004.43.28.jpeg) | ![](images/img3.png) |
+
+
 
