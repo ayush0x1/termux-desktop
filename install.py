@@ -4,7 +4,7 @@ from os import system as sys
 
 class requre:
      req="apt install x11-repo"
-     ins="apt install polybar openbox tigervnc alacritty feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
+     ins="apt install polybar python-tkinter openbox tigervnc alacritty feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
 
 
 def courser():
@@ -25,10 +25,13 @@ def wall():
      sys("cd ~/.config/polybar")
      sys("wget https://archive.org/download/polybar/polybar.zip && unzip polybar.zip && rm polybar.zip")
      sys("cd polybar-themes && bash setup.sh && rm -rf polybar-themes")
-     sys("mkdir ~/Picture && mkdir Downloads && mkdir Public && cd ~/")
+     sys("mkdir ~/Picture && mkdir ~/Desktop && mkdir ~/Videos && mkdir ~/Project && mkdir Downloads && mkdir Public && cd ~/")
      print("wallpaper")
-     sys("rm Picture/*")
-     sys("wget https://ia600602.us.archive.org/15/items/wallpaper_202601/spy-x-family-anya-forger-hot-cocoa-lamppost-desktop-wallpaper-preview.jpg -O ~/Picture/wall.jpg ")
+
+
+def app():
+     sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && unzip /data/data/com.termux/files/usr/share/app.zip")
+
 
 
 
@@ -47,7 +50,7 @@ def vnc():
 
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill ~/Picture/wall.jpg &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill /data/data/com.termux/files/usr/share/app/wall/wall.png &\npython /data/data/com.termux/files/usr/share/app/app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
@@ -85,6 +88,7 @@ def main():
 try:
    main()
    wall()
+   app()
    courser()
    theme()
    vnc()
