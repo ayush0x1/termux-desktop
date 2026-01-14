@@ -70,7 +70,7 @@ def vnc():
       )
       sys("clear && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
-     print(Style.BRIGHT + Fore.GREEN + "[+] If you enjoy this project, please support it. A lot of time and effort went into creating it.")
+      print(Style.BRIGHT + Fore.GREEN + "[+] If you enjoy this project, please support it. A lot of time and effort went into creating it.")
 
 
 
