@@ -23,7 +23,7 @@ def wall():
      sleep(3)
      sys("mkdir ~/.config/polybar")
      sys("cd ~/.config/polybar")
-     sys("wget https://archive.org/download/polybar/polybar.zip && unzip polybar.zip && rm polybar.zip")
+     sys("wget https://archive.org/download/polybar_202601/polybar.zip && unzip polybar.zip && rm polybar.zip")
      sys("cd polybar-themes && bash setup.sh && rm -rf polybar-themes")
      sys("mkdir ~/Picture && mkdir ~/Desktop && mkdir ~/Videos && mkdir ~/Project && mkdir Downloads && mkdir Public && cd ~/")
      print("wallpaper")
@@ -70,6 +70,7 @@ def vnc():
       )
       sys("clear && start-desktop")
       print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
+     print(Style.BRIGHT + Fore.GREEN + "[+] If you enjoy this project, please support it. A lot of time and effort went into creating it.")
 
 
 
