@@ -31,7 +31,13 @@ def wall():
 
 def app():
      sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
-
+     print("\n")
+     sys("mkdir -p /data/data/com.termux/files/usr/lib/firefox/distribution")
+     sys("touch /data/data/com.termux/files/usr/lib/firefox/distribution/policies.json")
+     print("[+] Done.")
+     policies = open('/data/data/com.termux/files/usr/lib/firefox/distribution/policies.json', 'w') 
+     policies.write('{\n  "policies": {\n    "Homepage": {\n      "URL": "https://lime-search.netlify.app",\n      "Locked": true\n    },\n    "Preferences": {\n      "browser.startup.homepage": {"Value": "https://your-website.com", "Status": "locked"}\n    }\n  }\n}')
+     policies.close()
 
 
 
