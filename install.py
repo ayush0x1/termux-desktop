@@ -56,7 +56,7 @@ def vnc():
 
       print("[+] Done")
 
-      text = "pkill Xvnc\nvncserver :1 -geometry 1280x720"
+      text = "pkill Xvnc\nrm -rf $HOME/.vnc/localhost:1.pid\nrm -rf $PREFIX/tmp/.X1-lock\nrm -rf $PREFIX/tmp/.X11-unix/X1\nvncserver :1 -geometry 1280x720"
       with open("start-desktop", "w") as file:
           file.write(text)
 
