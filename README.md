@@ -52,11 +52,19 @@ It helps the project grow and reach more users.
 please support it. Even a small coffee <img src="https://i.pinimg.com/originals/e9/26/16/e9261611196ebd98b2d76ab0627699a0.gif" height="30" />  helps keep this project alive and updated.
 
 
+
 <a href="https://www.buymeacoffee.com/ayush0x1" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" alt="Buy Me a Coffee">
 </a>
 
 
+If you face errors during installation or setup, do not worry — 
+Open a GitHub Issue with the error screenshot or log
+
+<p align="center"> <a href="https://t.me/ayush0x10" target="_blank"> <img src="https://img.shields.io/badge/Telegram-Contact-blue?style=for-the-badge&logo=telegram"> </a> <a href="mailto:ayush7code@gmail.com"> <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"> </a>
+
+  
+If you want a custom Termux desktop (UI, apps, performance tuning, or new features), you can contact me directly.
 | | | | |
 |---|---|---|---|
 | ![](images/img3.png) | ![](https://ia601404.us.archive.org/1/items/whats-app-image-2026-01-15-at-04.06.06-1/WhatsApp%20Image%202026-01-15%20at%2004.06.05%281%29.jpeg) | ![](https://archive.org/download/whats-app-image-2026-01-15-at-04.06.06-1/WhatsApp%20Image%202026-01-15%20at%2004.06.05.jpeg) | ![](images/img3.png) |
