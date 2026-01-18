@@ -31,7 +31,7 @@ def wall():
 def bashrc():
     sys("cd ~/")
     brc = '#!/bin/bash\nclear\nclo=("tux" "moose" "bud-frogs")\ncow=${clo[RANDOM % ${#clo[@]}]}\ncowsay -f "$cow" "Welcome"'
-    with open(".bashrc", "w") as file:
+    with open("../.bashrc", "w") as file:
         file.write(brc)
 
       
