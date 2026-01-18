@@ -4,7 +4,7 @@ from os import system as sys
 
 class requre:
      req="apt install x11-repo"
-     ins="apt install polybar python-tkinter openbox tigervnc alacritty feh jp2a xcompmgr firefox pcmanfm  zip git rofi -y"
+     ins="apt install polybar python-tkinter openbox tigervnc alacritty feh jp2a cowsay xcompmgr firefox pcmanfm  zip git rofi -y"
 
 
 def courser():
@@ -28,7 +28,13 @@ def wall():
      sys("mkdir ~/Picture && mkdir ~/Desktop && mkdir ~/Videos && mkdir ~/Project && mkdir Downloads && mkdir Public && cd ~/")
      print("wallpaper")
 
+def bashrc():
+    sys("cd ~/")
+    brc = '#!/bin/bash\nclear\nclo=("tux" "moose" "bud-frogs")\ncow=${clo[RANDOM % ${#clo[@]}]}\ncowsay -f "$cow" "Welcome"'
+    with open(".bashrc", "w") as file:
+        file.write(brc)
 
+      
 def app():
      sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
      print("\n")
@@ -53,7 +59,6 @@ def vnc():
 
       vnc_dir = "/data/data/com.termux/files/home/.vnc"
       os.makedirs(vnc_dir, exist_ok=True)
-
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
       con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill /data/data/com.termux/files/usr/share/app/wall/wall1.png &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
@@ -74,10 +79,10 @@ def vnc():
       "mv start-desktop $PREFIX/bin && "
       "start-desktop"
       )
-      sys("clear && start-desktop")
-      print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
-      print(Style.BRIGHT + Fore.GREEN + "[+] If you enjoy this project, please support it. A lot of time and effort went into creating it.")
 
+      sys("clear && cowsay -f koala  'If you enjoy this project, please support it. A lot of time and effort went into creating it.'")
+      sys("start-desktop")
+      print(Style.BRIGHT + Fore.GREEN + "[+] Next time use command : start-desktop")
 
 
 
@@ -97,6 +102,7 @@ try:
    wall()
    app()
    courser()
+   bashrc()
    theme()
    vnc()
         
