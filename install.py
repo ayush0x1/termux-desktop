@@ -74,14 +74,10 @@ def neo():
 	console.print("[+] Neofetch ",style="bold blue")
 	sleep(3)
 	sys("rm ~/.config/neofetch/*")
-	sys("wget https://archive.org/download/config_20260204/c.zip -O ~/.config/neofetch/c.zip")
-	sys("cd ~/.config/neofetch/ && unzip c.zip")
-	sys("rm ~/.config/neofetch/c.zip")
+	sys("wget https://github.com/Gorkido/termux-desktop-i3/raw/refs/heads/main/files/.config/neofetch/config.conf -O ~/.config/neofetch/config.conf")
 	console.print("[+] done", style="bold blue")
 
 
-      
-      
 ### ayush0x1 software(app)    
 def app():
      sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
