@@ -152,8 +152,8 @@ try:
    wall()
    app()
    courser()
-   bashrc()
-   neo()
+   #bashrc()
+   #neo()
    theme()
    vnc()
         
