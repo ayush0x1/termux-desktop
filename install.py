@@ -57,7 +57,7 @@ def wall():
 
 def bashrc():
     sys("cd ~/")
-    brc = '#!/bin/bash\nclear\nneofetch'
+    brc = '#!/bin/bash\nclear\nneofetch --ascii_distro Radix'
     with open("../.bashrc", "w") as file:
         file.write(brc)
 
@@ -152,7 +152,7 @@ try:
    wall()
    app()
    courser()
-   #bashrc()
+   bashrc()
    #neo()
    theme()
    vnc()
