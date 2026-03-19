@@ -48,10 +48,10 @@ def wall():
      sleep(3)
      sys("mkdir ~/.config/polybar")
      sys("cd ~/.config/polybar")
-     sys("wget https://archive.org/download/polybar_202601/polybar.zip && unzip polybar.zip && rm polybar.zip")
+     sys("wget https://archive.org/download/polybar_20260319/polybar.zip && unzip polybar.zip && rm polybar.zip")
      sys("cd polybar-themes && bash setup.sh && rm -rf polybar-themes")
      sys("mkdir ~/Picture && mkdir ~/Desktop && mkdir ~/Videos && mkdir ~/Project && mkdir Downloads && mkdir Public && cd ~/")
-     print("wallpaper")
+     
 
 ### bashrc 
 
@@ -64,23 +64,11 @@ def bashrc():
       
       
 
-###  neofetch config 
-
-def neo():
-	from rich.console import Console
-	
-	console = Console()
-	
-	console.print("[+] Neofetch ",style="bold blue")
-	sleep(3)
-	sys("rm ~/.config/neofetch/*")
-	sys("wget https://github.com/Gorkido/termux-desktop-i3/raw/refs/heads/main/files/.config/neofetch/config.conf -O ~/.config/neofetch/config.conf")
-	console.print("[+] done", style="bold blue")
 
 
 ### ayush0x1 software(app)    
 def app():
-     sys("wget https://archive.org/download/app_20260114/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
+     sys("wget https://archive.org/download/app_20260319/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
      print("\n")
      sys("mkdir -p /data/data/com.termux/files/usr/lib/firefox/distribution")
      sys("touch /data/data/com.termux/files/usr/lib/firefox/distribution/policies.json")
@@ -107,9 +95,9 @@ def vnc():
 
       vnc_dir = "/data/data/com.termux/files/home/.vnc"
       os.makedirs(vnc_dir, exist_ok=True)
-      sys("pkill Xvnc && vncserver && cd ~/.vnc/")
+      sys("pkill Xvnc && rm ~/tmp && vncserver && cd ~/.vnc/")
 
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --bg-fill /data/data/com.termux/files/usr/share/app/wall/wall1.png &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --randomize --bg-fill /data/data/com.termux/files/usr/share/app/wall/* &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
@@ -150,10 +138,11 @@ def main():
 try:
    main()
    wall()
+   
    app()
    courser()
    bashrc()
-   #neo()
+   
    theme()
    vnc()
         
