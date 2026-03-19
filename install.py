@@ -95,7 +95,7 @@ def vnc():
 
       vnc_dir = "/data/data/com.termux/files/home/.vnc"
       os.makedirs(vnc_dir, exist_ok=True)
-      sys("pkill Xvnc && rm ~/tmp && vncserver && cd ~/.vnc/")
+      sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
       con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --randomize --bg-fill /data/data/com.termux/files/usr/share/app/wall/* &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
