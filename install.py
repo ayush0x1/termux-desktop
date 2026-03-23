@@ -57,8 +57,8 @@ def wall():
 
 def bashrc():
     sys("cd ~/")
-    brc = '#!/bin/bash\nclear\nneofetch --ascii_distro Radix'
-    with open("../.bashrc", "w") as file:
+    brc = '\nclear\nneofetch --ascii_distro Radix\n'
+    with open("../.bashrc", "a") as file:
         file.write(brc)
 
       
