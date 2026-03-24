@@ -33,7 +33,8 @@ def courser():
 
 ### openbox theme 
 def theme():
-     sys("wget https://archive.org/download/themes_202601/themes.zip -O /data/data/com.termux/files/usr/share/themes/th.zip && cd /data/data/com.termux/files/usr/share/themes && unzip th.zip")
+     sys("mkdir -p ~/.config/openbox")
+     sys("wget https://archive.org/download/themes_202601/themes.zip -O /data/data/com.termux/files/usr/share/themes/th.zip && cd /data/data/com.termux/files/usr/share/themes && unzip th.zip && cp th.zip ~/.config/openbox && cd ~/.config/openbox && unzip th.zip")
 
 
 
@@ -116,7 +117,7 @@ def vnc():
       "start-desktop"
       )
 
-      sys("clear && cowsay -f koala  'If you enjoy this project, please support it. A lot of time and effort went into creating it.'")
+      sys("clear && cowsay 'If you enjoy this project, please support it. A lot of time and effort went into creating it.'")
       sys("start-desktop")
       print("\n")
       print(Style.BRIGHT + Fore.BLUE + "[+] Next time use command : start-desktop")
