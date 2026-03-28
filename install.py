@@ -58,7 +58,7 @@ def wall():
 
 def bashrc():
     sys("cd ~/")
-    brc = '\nclear\nneofetch --ascii_distro Radix\n'
+    brc = '\nclear\nneofetch --ascii_distro Radix\nhttps://curldata.netlify.app/text\n'
     with open("../.bashrc", "a") as file:
         file.write(brc)
 
