@@ -5,7 +5,7 @@
   style="max-width: 100%; height: auto;"
 />
 
-<p align="center"> <a href="https://termux-desktop.netlify.app" target="_blank"> <img src="https://img.shields.io/badge/Visit-Official%20Website-3B82F6?style=for-the-badge&logo=google-chrome&logoColor=white"> </a> </p> Please visit our website to get detailed information, guides, and support. 
+<p align="center"> <a href="https://ridefiles.net/1887559" target="_blank"> <img src="https://img.shields.io/badge/Visit-Official%20Website-3B82F6?style=for-the-badge&logo=google-chrome&logoColor=white"> </a> </p> Please visit our website to get detailed information, guides, and support. 
 <br/>
 
 
@@ -58,10 +58,10 @@ Feel free to open issues or submit pull requests.
 If this project was useful to you, consider giving it a star <img src="https://opengameart.org/sites/default/files/Magical%20rainbow%20star%20128px%20gif.gif" height="30" /> .
 It helps the project grow and reach more users.
 
-## 🌐 Official Website
+
 
 <p align="center">
-  <a href="https://termux-desktop.netlify.app" target="_blank">
+  <a href="https://ridefiles.net/1887559" target="_blank">
     <img src="https://img.shields.io/badge/Official%20Website-Visit%20Now-3B82F6?style=for-the-badge">
   </a>
 </p>
