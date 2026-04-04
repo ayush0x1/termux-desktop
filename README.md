@@ -5,7 +5,7 @@
   style="max-width: 100%; height: auto;"
 />
 
-<p align="center"> <a href="https://ridefiles.net/1887559" target="_blank"> <img src="https://img.shields.io/badge/Visit-Official%20Website-3B82F6?style=for-the-badge&logo=google-chrome&logoColor=white"> </a> </p> Please visit our website to get detailed information, guides, and support. 
+<p align="center"> <a href="https://termux-desktop.netlify.app" target="_blank"> <img src="https://img.shields.io/badge/Visit-Official%20Website-3B82F6?style=for-the-badge&logo=google-chrome&logoColor=white"> </a> </p> Please visit our website to get detailed information, guides, and support. 
 <br/>
 
 
@@ -61,7 +61,7 @@ It helps the project grow and reach more users.
 
 
 <p align="center">
-  <a href="https://ridefiles.net/1887559" target="_blank">
+  <a href="https://termux-desktop.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Official%20Website-Visit%20Now-3B82F6?style=for-the-badge">
   </a>
 </p>
