@@ -53,6 +53,32 @@ Hi, I’m <a href="https://github.com/ayush0x1/" target="_blank">**ayush**</a><i
 Contributions and feedback are welcome.  
 Feel free to open issues or submit pull requests.
 
+## Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ayush0x1">
+        <img src="https://github.com/ayush0x1.png" width="90px;" alt="ayush0x1"/>
+        <br />
+        <sub><b>ayush0x1</b></sub>
+      </a>
+      <br />
+      <sub></sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sudoloser">
+        <img src="https://github.com/sudoloser.png" width="90px;" alt="sudoloser"/>
+        <br />
+        <sub><b>sudoloser</b></sub>
+      </a>
+      <br />
+      <sub></sub>
+    </td>
+  </tr>
+</table>
+
+
 ## Support
 
 If this project was useful to you, consider giving it a star <img src="https://opengameart.org/sites/default/files/Magical%20rainbow%20star%20128px%20gif.gif" height="30" /> .
