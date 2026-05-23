@@ -23,7 +23,7 @@ import os
 
 class requre:
      req="apt install x11-repo"
-     ins="apt install polybar geany python-tkinter neofetch openbox tigervnc alacritty feh jp2a cowsay xcompmgr firefox pcmanfm  zip git rofi imagemagick -y"
+     ins="apt install polybar geany python-tkinter neofetch openbox tigervnc alacritty feh jp2a cowsay xcompmgr firefox pcmanfm  zip git rofi -y"
 
 ### courser(pointer) 
 def courser():
@@ -49,7 +49,7 @@ def wall():
      sleep(3)
      sys("mkdir ~/.config/polybar")
      sys("cd ~/.config/polybar")
-     sys("wget https://archive.org/download/polybar_202605/polybar.zip && unzip polybar.zip && rm polybar.zip")
+     sys("wget https://archive.org/download/polybar_20260319/polybar.zip && unzip polybar.zip && rm polybar.zip")
      sys("cd polybar-themes && bash setup.sh && rm -rf polybar-themes")
      sys("mkdir ~/Picture && mkdir ~/Desktop && mkdir ~/Videos && mkdir ~/Project && mkdir Downloads && mkdir Public && cd ~/")
      
@@ -69,7 +69,7 @@ def bashrc():
 
 ### ayush0x1 software(app)    
 def app():
-    sys("wget https://archive.org/download/app_20260523/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
+    sys("wget https://archive.org/download/app_20260319/app.zip -O /data/data/com.termux/files/usr/share/app.zip && cd  /data/data/com.termux/files/usr/share/ && unzip app.zip")
 
     base = "/data/data/com.termux/files/usr/lib/firefox/distribution"
 
@@ -109,7 +109,7 @@ def vnc():
       os.makedirs(vnc_dir, exist_ok=True)
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
-      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nWALL_DIR="/data/data/com.termux/files/usr/share/app/wall"\nWALL=$(find "$WALL_DIR" -type f | shuf -n 1)\nfeh --bg-fill "$WALL" &\nbash "$HOME/.config/polybar/docky/scripts/pywal.sh" "$WALL" &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nfeh --randomize --bg-fill /data/data/com.termux/files/usr/share/app/wall/* &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
@@ -159,8 +159,8 @@ try:
    vnc()
         
 except ImportError:
-   print("[!] Installing : pip install rich colorama==0.4.6 pywal \n")
-   sys("pip install rich colorama==0.4.6 pywal")
+   print("[!] Installing : pip install rich colorama==0.4.6 \n")
+   sys("pip install rich colorama==0.4.6")
    sys("python install.py")
    print("\n")
 
