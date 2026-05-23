@@ -109,7 +109,7 @@ def vnc():
       os.makedirs(vnc_dir, exist_ok=True)
       sys("pkill Xvnc && vncserver && cd ~/.vnc/")
 
-    con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nWALL_DIR="/data/data/com.termux/files/usr/share/app/wall"\nWALL=$(find "$WALL_DIR" -type f | shuf -n 1)\nfeh --bg-fill "$WALL" &\nbash "$HOME/.config/polybar/docky/scripts/pywal.sh" "$WALL" &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
+      con = """\nexport DISPLAY=:1\nsed -i  "s|<name>.*</name>|<name>Prismatic-Night</name>|g" ~/.config/openbox/rc.xml\nxcompmgr &\nWALL_DIR="/data/data/com.termux/files/usr/share/app/wall"\nWALL=$(find "$WALL_DIR" -type f | shuf -n 1)\nfeh --bg-fill "$WALL" &\nbash "$HOME/.config/polybar/docky/scripts/pywal.sh" "$WALL" &\ncd /data/data/com.termux/files/usr/share/app/ && python app.py &\n(sleep 2 && ~/.config/polybar/docky/launch.sh &>/dev/null &) &\nexec openbox-session &\nsleep 2\nopenbox --reconfigure &"""
       with open(f"{vnc_dir}/xstartup", "w") as file:
           file.write(con)
 
