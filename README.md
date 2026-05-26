@@ -102,7 +102,15 @@ It helps the project grow and reach more users.
 If you face errors during installation or setup, do not worry — 
 Open a GitHub Issue with the error screenshot or log
 
+<p align="center">
+  <img src="https://res.cloudinary.com/dunwz8exc/image/upload/v1779760520/onsmartphone-02.0d3d835d_laeodg.webp" height="35%" alt="Linux course on mobile">
+</p>
+<p>
+ Many users message me on telegram with very basic linux errors, so I recommend learning linux basics first.  
+</p>
+You will not only learn the basics, but also advanced linux topics.
 
+[![Continue Learning](https://img.shields.io/badge/Continue-Learning-3B82F6?style=for-the-badge)](https://dub.sh/linux-adv)
 
 | | | | |
 |---|---|---|---|
